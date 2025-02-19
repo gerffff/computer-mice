@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-container {
+            text-align: center;
+        }
+
+        .form-container {
+            align-self: flex-start;
+            width: 50%;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-container">
+            <h1>Форма для зворотного зв'язку</h1>
+        </div>
+        <div class="form-container">
+            <p class="description">Допоможемо вам підібрати компютерну мишу під ваші потреби</p>
+            <form>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Повідомлення:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Надіслати">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
